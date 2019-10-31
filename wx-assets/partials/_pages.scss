@@ -22,15 +22,17 @@
     }
 }
 
-.forbes-project__item {
-    height: 200px;
-    overflow: hidden;
-    a {
-        @include flex;
-        @include flex-align-items(flex-end);
-        width: 100%;
-        font-size: .9em;
-        padding: 20px;
-        text-align: left;
+.forbes-project {
+    &__item {
+        height: 200px;
+        overflow: hidden;
+        a {
+            @include flex;
+            @include flex-align-items(flex-end);
+            width: 100%;
+            font-size: .9em;
+            padding: 20px;
+            text-align: left;
+        }
     }
 }
