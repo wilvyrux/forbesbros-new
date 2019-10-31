@@ -80,6 +80,29 @@ header.header {
   -webkit-box-pack: center !important;
   -ms-flex-pack: center !important;
   justify-content: center !important; }
+  .project-taxonomy .fpt-holder,
+  .fp-taxonomy-wrapper .fpt-holder {
+    padding: 10px; }
+    .project-taxonomy .fpt-holder img,
+    .fp-taxonomy-wrapper .fpt-holder img {
+      width: 40px;
+      margin-right: 6px; }
+
+.fp-wrapper {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-wrap: wrap !important;
+  flex-wrap: wrap !important;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+  margin: 50px 0; }
+  .fp-wrapper .fp-inner-holder {
+    width: calc(100%/4); }
 
 .dwqa-breadcrumbs {
   background: #262626 !important; }

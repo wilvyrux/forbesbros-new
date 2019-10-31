@@ -3,4 +3,21 @@
     @include flex;
     @include flex-align-items(center);
     @include flex-justify-content(center);
+    .fpt-holder {
+        padding: 10px;
+        img {
+            width: 40px;
+            margin-right: 6px;
+        }
+    }
+}
+
+.fp-wrapper {
+    @include flex;
+    @include flex-align-items(center);
+    @include flex-justify-content(center);
+    margin: 50px 0;
+    .fp-inner-holder {
+        width: calc(100%/4);
+    }
 }
