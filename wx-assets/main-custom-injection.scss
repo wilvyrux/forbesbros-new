@@ -1,5 +1,7 @@
 /******************CSS INJECTION 
  ***********************/
+
+
 /***
 Date : 
 Web Designer: William L. Carrasca Jr.
@@ -7,14 +9,12 @@ Company: Enggware LTD under Enggsol Engineering Solution
 Email: william@enggware.com 
 Contacts: +639212632325
 Skype: williamcarrascajr
- ***/                             
+ ***/
 
 // Modules and Variables
 @import "modules/mixin";
 @import "modules/colors";
 @import "modules/typography";
-
-
 // Partials
 @import "partials/resets";
 @import "partials/buttons";
@@ -23,8 +23,8 @@ Skype: williamcarrascajr
 @import "partials/sidebar";
 @import "partials/forms";
 @import "partials/pages";
-@import "partials/modal";  
-@import "partials/singlepage";  
-@import "partials/breadcrumbs";  
-
-@import "partials/wx-shortcode/allwxshortcodes";  
+@import "partials/modal";
+@import "partials/singlepage";
+@import "partials/breadcrumbs";
+@import "partials/headings";
+@import "partials/wx-shortcode/allwxshortcodes";

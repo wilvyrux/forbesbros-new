@@ -76,6 +76,13 @@ header.header {
   .dwqa-breadcrumbs .dwqa-current {
     color: #f36a22 !important; }
 
+h2.vc_custom_heading {
+  color: #f36a22 !important;
+  padding-bottom: 10px;
+  font-size: 3em;
+  text-transform: uppercase !important;
+  font-weight: bold; }
+
 .wx-heading.align-left,
 .wx-button.align-left {
   text-align: left; }
