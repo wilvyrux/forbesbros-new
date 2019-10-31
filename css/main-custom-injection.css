@@ -104,10 +104,20 @@ header.header {
   .fp-wrapper .fp-inner-holder {
     width: calc(100%/4); }
 
-.forbes-project__item {
+.forbes-project__items {
   height: 200px;
-  overflow: hidden; }
-  .forbes-project__item a {
+  overflow: hidden;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-wrap: wrap !important;
+  flex-wrap: wrap !important;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  padding: 10px;
+  background-size: cover !important; }
+  .forbes-project__items a {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;

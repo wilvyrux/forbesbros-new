@@ -23,9 +23,13 @@
 }
 
 .forbes-project {
-    &__item {
+    &__items {
         height: 200px;
         overflow: hidden;
+        @include flex;
+        @include flex-align-items(flex-end);
+        padding: 10px;
+        background-size: cover !important;
         a {
             @include flex;
             @include flex-align-items(flex-end);
