@@ -1,11 +1,11 @@
 header {
     &.header {
         border: 0;
-    }
-    &.headroom {
         &.headroom {
-            &--not-top {
-                @include t-black(.9);
+            &.headroom {
+                &--not-top {
+                    @include t-black(.9);
+                }
             }
         }
     }

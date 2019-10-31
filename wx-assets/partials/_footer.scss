@@ -1,0 +1,29 @@
+.copyright__list li {
+    padding: 15px;
+}
+
+.copyright {
+    &__list {
+        @include flex;
+        @include flex-align-items(center);
+        @include flex-justify-content(center);
+    }
+}
+
+.site-footer {
+    .footer-column {
+        max-width: 100%;
+        flex: 0 0 100%;
+        text-align: center;
+        .widget_nav_menu {
+            .menu {
+                @include flex;
+                @include flex-align-items(center);
+                @include flex-justify-content(center);
+                li {
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
