@@ -1,0 +1,6 @@
+.project-taxonomy,
+.fp-taxonomy-wrapper {
+    @include flex;
+    @include flex-align-items(center);
+    @include flex-justify-content(center);
+}
