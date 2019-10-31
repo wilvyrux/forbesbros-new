@@ -25,9 +25,11 @@ ul li,
 a {
   letter-spacing: inherit !important; }
 
-* {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+header.header {
+  border: 0; }
+
+header.headroom.headroom--not-top {
+  background: rgba(0, 0, 0, 0.9); }
 
 .dwqa-breadcrumbs {
   background: #262626 !important; }

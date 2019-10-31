@@ -1,15 +1,11 @@
-
 body {
     // font-family: $font-secondary;
     font-size: 14px;
-    
 }
-
 
 ul {
     list-style: none;
 }
-
 
 h1,
 h2,
@@ -20,11 +16,10 @@ p,
 div,
 ul li,
 a {
-//    font-family: $font-secondary;
+    //    font-family: $font-secondary;
     letter-spacing: inherit !important;
 }
 
-
-* {
-    @include transition(.3s);
-}
+// * {
+//     @include transition(.3s);
+// }
