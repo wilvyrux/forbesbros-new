@@ -5,6 +5,7 @@ header {
             &.headroom {
                 &--not-top {
                     @include t-black(.9);
+                    border: 0;
                 }
             }
         }

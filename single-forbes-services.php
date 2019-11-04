@@ -8,7 +8,7 @@ $tm_dione_heading_image = Kirki::get_option( 'tm-dione', 'post_bg_image' );
 $tm_dione_layout        = 'content-sidebar';//Kirki::get_option( 'tm-dione', 'post_layout' );
 get_header(); ?>
 
-    <div class="container">
+    <div class="container services-single-container">
         <div class="row">
             <div class="col-md-12">
                 <div class="content">

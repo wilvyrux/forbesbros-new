@@ -11,11 +11,46 @@ $tm_dione_post_hide_featured_image = get_post_meta( get_the_ID(), "post_hide_fea
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'post blog-entry' ); ?>>
     
     <div class="row">
-        <div class="col-md-6 post-meta">
-            <h3>Client: <?php echo get_field('client', $post->ID); ?></h3>
-            <h3>Length: <?php echo get_field('length', $post->ID); ?></h3>
-            <h3>Completion: <?php echo get_field('completion', $post->ID); ?></h3>
-            <h3>Highlight: <?php echo get_field('highlight', $post->ID); ?></h3>
+        <div class="col-md-6 post-meta project-single-details">
+            <!--project-single-details__holder-->
+            <div class="project-single-details__holder">
+                    <div class="projects-container__next">
+                         <?php forbes_project_navigation(); ?>
+                    </div>
+                    
+                    
+                    <h2 class="project-single-details__title"><?php the_title() ?></h2>
+                    
+                    <ul class="project-single-details__information">
+                        <li><strong>Client:</strong> <?php echo get_field('client', $post->ID); ?></li>
+                        <li><strong>Client:</strong> <?php echo get_field('client', $post->ID); ?></li>
+                        <li><strong>Length:</strong> <?php echo get_field('length', $post->ID); ?></li>
+                        <li><strong>Completion: </strong><?php echo get_field('completion', $post->ID); ?></li>
+                        <li><strong>Highlight:</strong> <?php echo get_field('highlight', $post->ID); ?></li>
+                    </ul>
+                    <!--<h3></h3>-->
+                    <!--<h3></h3>-->
+                    <!--<h3></h3>-->
+                    <!--<h3></h3>-->
+                    <div class="project-single-details__description">
+                         <?php the_content(); ?>
+                        
+                    </div>
+                    
+        
+                    <p class="project-category project-single-details__category">
+                        <?php
+                            $cat = get_the_terms($post->ID, 'project-taxonomy');
+        
+                            if(isset($cat[0])) {
+                                $cat_image_id = get_term_meta($cat[0]->term_id, 'category-image-id', true);
+                                echo wp_get_attachment_image($cat_image_id, 'thumbnail') . ' - ' . $cat[0]->name;
+                            }
+                        ?>
+                    </p>
+                 <!--project-single-details__holder-->
+            </div>
+            
         </div>
         
         
@@ -53,19 +88,23 @@ $tm_dione_post_hide_featured_image = get_post_meta( get_the_ID(), "post_hide_fea
             <?php } ?>
         <?php } else { ?>
             <?php if ( has_post_thumbnail() && $tm_dione_post_hide_featured_image != 'on' ) { ?>
-                <div class="post-thumb col-md-6">
-                    <a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail( 'full' ); ?></a>
+                <div class="post-thumb col-md-6 project-single-details__image">
+                    <!--<a href="<?php //echo get_permalink(); ?>"></a>-->
+                    <div class="project-single-details__image--holder white-cover">
+                          <?php the_post_thumbnail( 'full' ); ?>
+                    </div>
+                  
                 </div>
             <?php } ?>
         <?php } ?>
     </div>    
 
-    <div class="blog-entry-meta text-center">
-        <span class="date"><?php the_time( 'M d, Y' ) ?></span>
-    </div>
+    <!--<div class="blog-entry-meta text-center">-->
+    <!--    <span class="date"><?//php the_time( 'M d, Y' ) ?></span>-->
+    <!--</div>-->
 
-    <h3 class="blog-entry-title text-center"><?php the_title() ?></h3>
-    <?php the_content(); ?>
+    <!--<h3 class="blog-entry-title text-center"><?php the_title() ?></h3>-->
+   
     <?php
     wp_link_pages( array(
         'before'      => '<div class="page-links"><span class="page-links-title">' . esc_html__( 'Pages:', 'tm-dione' ) . '</span>',

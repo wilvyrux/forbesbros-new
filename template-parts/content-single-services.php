@@ -44,18 +44,35 @@ $tm_dione_post_hide_featured_image = get_post_meta( get_the_ID(), "post_hide_fea
         <?php } ?>
     <?php } else { ?>
         <?php if ( has_post_thumbnail() && $tm_dione_post_hide_featured_image != 'on' ) { ?>
-            <div class="post-thumb">
-                <a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail( 'full' ); ?></a>
-            </div>
+            <!--<div class="post-thumb">-->
+            <!--    <a href="<? //php echo get_permalink(); ?>"><?php //the_post_thumbnail( 'full' ); ?></a>-->
+            <!--</div>-->
         <?php } ?>
     <?php } ?>    
 
-    <div class="blog-entry-meta text-center">
-        <span class="date"><?php the_time( 'M d, Y' ) ?></span>
-    </div>
+    <!--<div class="blog-entry-meta text-center">-->
+    <!--    <span class="date"><? //php the_time( 'M d, Y' ) ?></span>-->
+    <!--</div>-->
 
-    <h3 class="blog-entry-title text-center"><?php the_title() ?></h3>
-    <?php the_content(); ?>
+    
+    <div class="services-single-content">
+          <div class="services-single-content__left services-single-content__item">
+              
+                    <h2><?php the_title() ?></h2>
+                    <?php the_content(); ?>
+              </div>
+        
+            <div class="services-single-content__right services-single-content__item">
+                <div class="services-single-content__item--holder white-cover">
+                     <?php the_post_thumbnail( 'full' ); ?>
+                </div>
+             
+            </div>
+              
+    </div>
+  
+    
+    
     <?php
     wp_link_pages( array(
         'before'      => '<div class="page-links"><span class="page-links-title">' . esc_html__( 'Pages:', 'tm-dione' ) . '</span>',
