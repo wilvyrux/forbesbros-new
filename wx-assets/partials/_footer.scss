@@ -11,6 +11,7 @@
 }
 
 .site-footer {
+    background-color: #000;
     .footer-column {
         max-width: 100%;
         flex: 0 0 100%;
@@ -23,6 +24,32 @@
                 li {
                     padding: 10px;
                 }
+            }
+        }
+    }
+}
+
+.site-footer .footer-column {
+    max-width: inherit;
+    flex: inherit;
+    width: inherit;
+}
+
+.footer-wrapper #nav_menu-2 ul li {
+    padding: 0px 20px !important;
+}
+
+.footer-wrapper {
+    #text-5 {
+        margin: 0;
+        padding: 0;
+        div {
+            border-bottom: 2px solid #f44d0c;
+            text-align: center;
+            p {
+                color: #fff;
+                text-align: center;
+                font-size: 1.2em;
             }
         }
     }
