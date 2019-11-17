@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 header {
     &.header {
         border: 0;
@@ -10,4 +11,18 @@ header {
             }
         }
     }
+=======
+header {
+    &.header {
+        border: 0;
+        &.headroom {
+            &.headroom {
+                &--not-top {
+                    @include t-black(.9);
+                    border: 0;
+                }
+            }
+        }
+    }
+>>>>>>> 30579f331d280eb6c285fc97bfff0c705396a11c
 }
