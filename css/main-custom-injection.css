@@ -35,9 +35,9 @@ a {
   font-size: 1.3em; }
 
 .black-text {
-  color: #000; }
+  color: #000000 !important; }
   .black-text p {
-    color: #000; }
+    color: #000000 !important; }
 
 header.header {
   border: 0; }
@@ -62,7 +62,7 @@ header.header {
   justify-content: center !important; }
 
 .site-footer {
-  background-color: #000; }
+  background-color: #000000 !important; }
   .site-footer .footer-column {
     max-width: 100%;
     -webkit-box-flex: 0;
@@ -98,10 +98,10 @@ header.header {
   margin: 0;
   padding: 0; }
   .footer-wrapper #text-5 div {
-    border-bottom: 2px solid #f44d0c;
+    border-bottom: 2px solid #e54c37 !important;
     text-align: center; }
     .footer-wrapper #text-5 div p {
-      color: #fff;
+      color: #fff !important;
       text-align: center;
       font-size: 1.2em; }
 
@@ -110,11 +110,7 @@ header.header {
   margin: 0; }
   .gform_wrapper .validation_error {
     font-size: 11px !important;
-<<<<<<< HEAD
-    background: #f36a22 !important;
-=======
     background: #e54c37 !important;
->>>>>>> 30579f331d280eb6c285fc97bfff0c705396a11c
     padding: 11px !important;
     color: #fff !important !important;
     border: 0 !important; }
@@ -127,11 +123,7 @@ header.header {
   .gform_wrapper .gform_body ul .gfield.gfield_error,
   .gform_wrapper .gform_body ul .gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
     padding: 5px !important;
-<<<<<<< HEAD
-    background: #f36a22 !important;
-=======
     background: #e54c37 !important;
->>>>>>> 30579f331d280eb6c285fc97bfff0c705396a11c
     max-width: 100% !important;
     width: 100% !important;
     color: #fff !important !important; }
@@ -151,21 +143,13 @@ header.header {
       padding: 10px;
       background: #fff !important;
       outline: 0;
-<<<<<<< HEAD
-      border: 1px solid #f36a22 !important;
-=======
       border: 1px solid #e54c37 !important;
->>>>>>> 30579f331d280eb6c285fc97bfff0c705396a11c
       padding-left: 10px;
       font-family: "Roboto", sans-serif !important; }
     .gform_wrapper .gform_body ul li > label {
       display: none !important; }
   .gform_wrapper .gform_footer input[type="submit"] {
-<<<<<<< HEAD
-    background: #f36a22 !important;
-=======
     background: #e54c37 !important;
->>>>>>> 30579f331d280eb6c285fc97bfff0c705396a11c
     color: #fff !important;
     text-transform: uppercase;
     border: 0;
@@ -262,7 +246,7 @@ header.header {
     .services-display .title-holder p {
       font-size: 1.3em;
       text-transform: uppercase;
-      color: #000; }
+      color: #000000 !important; }
   .services-display__items {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -307,12 +291,8 @@ header.header {
       .services-display__items .services-overlay a {
         display: inline-block;
         padding: 10px 25px;
-<<<<<<< HEAD
-        background: #f36a22 !important;
-=======
         background: #e54c37 !important;
->>>>>>> 30579f331d280eb6c285fc97bfff0c705396a11c
-        color: #fff; }
+        color: #fff !important; }
 
 .white-cap {
   overflow: hidden; }
@@ -353,10 +333,10 @@ header.header {
   left: 0;
   right: 0;
   max-width: 50%;
-  color: #000; }
+  color: #000000 !important; }
 
 .quote__top.wpb_column.vc_column_container.vc_col-sm-12 p {
-  color: #000; }
+  color: #000000 !important; }
 
 .interested-div h3,
 .interested-div p,
@@ -407,33 +387,10 @@ header.header {
         left: -20px;
         width: 7px;
         height: 7px;
-<<<<<<< HEAD
-        background: #f36a22 !important;
-        content: '';
-        display: block; }
-
-=======
         background: #e54c37 !important;
         content: '';
         display: block; }
 
-.wpb_text_column ul li {
-  position: relative;
-  font-size: 1.2em;
-  margin-bottom: 5px; }
-  .wpb_text_column ul li:marker {
-    display: none; }
-  .wpb_text_column ul li:before {
-    position: absolute;
-    top: 8px;
-    left: -20px;
-    width: 7px;
-    height: 7px;
-    background: #e54c37 !important;
-    content: '';
-    display: block; }
-
->>>>>>> 30579f331d280eb6c285fc97bfff0c705396a11c
 #content .wpb_alert p:last-child,
 #content .wpb_text_column :last-child,
 #content .wpb_text_column p:last-child,
@@ -465,7 +422,7 @@ header.header {
       font-size: 1.3em;
       color: #999; }
     .project-single-details__information strong {
-      color: #000;
+      color: #000000 !important;
       margin-right: 9px; }
   .project-single-details__description p {
     color: #999;
@@ -482,11 +439,7 @@ header.header {
       left: -20px;
       width: 7px;
       height: 7px;
-<<<<<<< HEAD
-      background: #f36a22 !important;
-=======
       background: #e54c37 !important;
->>>>>>> 30579f331d280eb6c285fc97bfff0c705396a11c
       content: '';
       display: block; }
   .project-single-details__category {
@@ -495,7 +448,7 @@ header.header {
       width: 45px; }
   .project-single-details__title {
     font-size: 2.2em;
-    border-bottom: 1px solid #f44d0c;
+    border-bottom: 1px solid #e54c37 !important;
     padding-bottom: 10px;
     margin-bottom: 25px; }
   .project-single-details__image--holder {
@@ -599,12 +552,8 @@ header.header {
   .project-display-thumbnail .fp-overlay a {
     display: inline-block;
     padding: 10px 25px;
-<<<<<<< HEAD
-    background: #f36a22 !important;
-=======
     background: #e54c37 !important;
->>>>>>> 30579f331d280eb6c285fc97bfff0c705396a11c
-    color: #fff; }
+    color: #fff !important; }
 
 .related-project-list .title {
   max-width: 1400px;
@@ -643,12 +592,8 @@ header.header {
     .related-project-list .project-tile .project-overlay a {
       display: inline-block;
       padding: 10px 25px;
-<<<<<<< HEAD
-      background: #f36a22 !important;
-=======
       background: #e54c37 !important;
->>>>>>> 30579f331d280eb6c285fc97bfff0c705396a11c
-      color: #fff;
+      color: #fff !important;
       font-size: .8em; }
 
 .contact-us-section__left ul li {
@@ -661,7 +606,7 @@ header.header {
   flex-wrap: wrap !important; }
   .contact-us-section__left ul li strong {
     width: 180px;
-    color: #000; }
+    color: #000000 !important; }
   .contact-us-section__left ul li br {
     display: none; }
 
@@ -689,7 +634,7 @@ h1.vc_custom_heading {
     display: block;
     position: absolute;
     content: '';
-    background: #f00;
+    background: #e54c37 !important;
     width: 174px;
     height: 2px;
     margin: 10px 0; }
@@ -706,29 +651,21 @@ h1.vc_custom_heading {
     left: -20px;
     width: 7px;
     height: 7px;
-<<<<<<< HEAD
-    background: #f36a22 !important;
-=======
     background: #e54c37 !important;
->>>>>>> 30579f331d280eb6c285fc97bfff0c705396a11c
     content: '';
     display: block; }
 
 .ui-accordion-header a {
-  color: #fff;
+  color: #fff !important;
   text-transform: uppercase;
   font-size: 1.5em; }
 
 .ui-accordion-header {
-<<<<<<< HEAD
-  background: #f36a22 !important;
-=======
   background: #e54c37 !important;
->>>>>>> 30579f331d280eb6c285fc97bfff0c705396a11c
-  color: #fff !important; }
+  color: #fff !important !important; }
 
 .ui-accordion-content .wpb_wrapper strong {
-  color: #000; }
+  color: #000000 !important; }
 
 .wx-heading.align-left,
 .wx-button.align-left {
