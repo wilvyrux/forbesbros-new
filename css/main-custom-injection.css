@@ -10,15 +10,15 @@ Skype: williamcarrascajr
  ***/
 @font-face {
   font-family: 'Futura Md BT';
-  src: url("css/FuturaBT-Medium.eot");
-  src: url("css/FuturaBT-Medium.eot?#iefix") format("embedded-opentype"), url("css/FuturaBT-Medium.woff2") format("woff2"), url("css/FuturaBT-Medium.woff") format("woff"), url("css/FuturaBT-Medium.ttf") format("truetype"), url("css/FuturaBT-Medium.svg#FuturaBT-Medium") format("svg");
+  src: url("css/fonts/FuturaBT-Medium.eot");
+  src: url("css/fonts/FuturaBT-Medium.eot?#iefix") format("embedded-opentype"), url("css/fonts/FuturaBT-Medium.woff2") format("woff2"), url("css/fonts/FuturaBT-Medium.woff") format("woff"), url("css/fonts/FuturaBT-Medium.ttf") format("truetype"), url("css/fonts/FuturaBT-Medium.svg#FuturaBT-Medium") format("svg");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'Futura Md BT';
-  src: url("css/FuturaBT-Bold.eot");
-  src: url("css/FuturaBT-Bold.eot?#iefix") format("embedded-opentype"), url("css/FuturaBT-Bold.woff2") format("woff2"), url("css/FuturaBT-Bold.woff") format("woff"), url("css/FuturaBT-Bold.ttf") format("truetype"), url("css/FuturaBT-Bold.svg#FuturaBT-Bold") format("svg");
+  src: url("css/fonts/FuturaBT-Bold.eot");
+  src: url("css/fonts/FuturaBT-Bold.eot?#iefix") format("embedded-opentype"), url("css/fonts/FuturaBT-Bold.woff2") format("woff2"), url("css/fonts/FuturaBT-Bold.woff") format("woff"), url("css/fonts/FuturaBT-Bold.ttf") format("truetype"), url("css/fonts/FuturaBT-Bold.svg#FuturaBT-Bold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
