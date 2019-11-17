@@ -14,7 +14,7 @@
     
     .fp-wrapper {
         @include flex;
-        @include flex-align-items(center);
+        @include flex-align-items(flex-start);
         @include flex-justify-content(center);
         margin: 50px 0;
         .fp-inner-holder {
@@ -571,6 +571,16 @@
         .title-holder {
             margin: 0 !important;
             padding-top: 10px;
+            @include flex;
+            @include flex-align-items(flex-start);
+            &__image {
+                img {
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 10px;
+                }
+            }
+            &__description {}
             h3 {
                 font-size: 1.4em;
                 margin: 0;

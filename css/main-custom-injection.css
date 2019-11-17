@@ -3,11 +3,25 @@
 /***
 Date : 
 Web Designer: William L. Carrasca Jr.
-Company: Enggware LTD under Enggsol Engineering Solution
-Email: william@enggware.com 
+Company: Spiderowls Web Design Solution
+Email: spiderowls@gmail.com 
 Contacts: +639212632325
 Skype: williamcarrascajr
  ***/
+@font-face {
+  font-family: 'Futura Md BT';
+  src: url("FuturaBT-Medium.eot");
+  src: url("FuturaBT-Medium.eot?#iefix") format("embedded-opentype"), url("FuturaBT-Medium.woff2") format("woff2"), url("FuturaBT-Medium.woff") format("woff"), url("FuturaBT-Medium.ttf") format("truetype"), url("FuturaBT-Medium.svg#FuturaBT-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Futura Md BT';
+  src: url("FuturaBT-Bold.eot");
+  src: url("FuturaBT-Bold.eot?#iefix") format("embedded-opentype"), url("FuturaBT-Bold.woff2") format("woff2"), url("FuturaBT-Bold.woff") format("woff"), url("FuturaBT-Bold.ttf") format("truetype"), url("FuturaBT-Bold.svg#FuturaBT-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
 body {
   font-size: 14px; }
 
@@ -46,6 +60,15 @@ header.header {
   header.header.headroom.headroom--not-top {
     background: rgba(0, 0, 0, 0.9);
     border: 0; }
+
+header #site-navigation .menu > ul > li:before, header #site-navigation .menu > ul > li:after {
+  display: none !important; }
+
+header #site-navigation .menu > ul > li a {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  header #site-navigation .menu > ul > li a:hover {
+    color: #e54c37 !important; }
 
 .copyright__list li {
   padding: 15px; }
@@ -147,7 +170,7 @@ header.header {
       outline: 0;
       border: 1px solid #e54c37 !important;
       padding-left: 10px;
-      font-family: "Roboto", sans-serif !important; }
+      font-family: "Futura Md BT" !important; }
     .gform_wrapper .gform_body ul li > label {
       display: none !important; }
   .gform_wrapper .gform_footer input[type="submit"] {
@@ -189,9 +212,9 @@ header.header {
   display: flex !important;
   -ms-flex-wrap: wrap !important;
   flex-wrap: wrap !important;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
   -webkit-box-pack: center !important;
   -ms-flex-pack: center !important;
   justify-content: center !important;
@@ -544,7 +567,19 @@ header.header {
 
 .project-display-thumbnail .title-holder {
   margin: 0 !important;
-  padding-top: 10px; }
+  padding-top: 10px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-wrap: wrap !important;
+  flex-wrap: wrap !important;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start; }
+  .project-display-thumbnail .title-holder__image img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px; }
   .project-display-thumbnail .title-holder h3 {
     font-size: 1.4em;
     margin: 0; }
@@ -715,7 +750,7 @@ h1.vc_custom_heading {
     display: inline-block;
     margin: 0;
     text-transform: uppercase;
-    font-family: "Oswald", sans-serif !important;
+    font-family: "Futura Md BT" !important;
     position: relative; }
   .wx-heading .primary-heading {
     font-size: 3em;
@@ -743,7 +778,7 @@ h1.vc_custom_heading {
     text-transform: capitalize;
     font-weight: 500;
     color: #fff !important;
-    font-family: "Roboto", sans-serif !important; }
+    font-family: "Futura Md BT" !important; }
   .wx-heading .fourth-heading {
     color: #fff !important;
     font-size: 3.5em;
@@ -767,7 +802,7 @@ h1.vc_custom_heading {
   font-size: 1.3em;
   letter-spacing: inherit;
   text-transform: capitalize;
-  font-family: "Roboto", sans-serif !important;
+  font-family: "Futura Md BT" !important;
   font-style: normal;
   line-height: 24px; }
 
@@ -882,7 +917,7 @@ h1.vc_custom_heading {
       -webkit-transition: all 1s ease;
       transition: all 1s ease;
       font-weight: 500;
-      font-family: "Oswald", sans-serif !important; }
+      font-family: "Futura Md BT" !important; }
     .text-image-wrapper .text-image-holder .overlay {
       position: absolute;
       left: 0;
