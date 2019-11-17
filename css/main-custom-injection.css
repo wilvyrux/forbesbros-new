@@ -26,7 +26,7 @@ a {
   letter-spacing: inherit !important; }
 
 .vc_btn3.vc_btn3-color-warning.vc_btn3-style-modern {
-  background: #ff3c00 !important; }
+  background: #e54c37 !important; }
 
 .services--grid .vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-modern.vc_btn3-color-warning {
   margin-top: 30%; }
@@ -319,7 +319,7 @@ header.header {
   .white-cap:before {
     content: '';
     width: 156px;
-    background: #fff;
+    background: #fff !important;
     height: 100%;
     position: absolute;
     -webkit-transform: rotate(22deg);
@@ -361,12 +361,12 @@ header.header {
 .interested-div h3,
 .interested-div p,
 .interested-div a {
-  color: #fff !important;
+  color: #fff !important !important;
   position: relative;
   z-index: 2; }
 
 .interested-div a:hover {
-  color: #f44d0c !important; }
+  color: #b51600 !important; }
 
 .white-cover {
   position: relative;
