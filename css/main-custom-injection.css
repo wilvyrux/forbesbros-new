@@ -23,7 +23,7 @@ Skype: williamcarrascajr
   font-style: normal; }
 
 body {
-  font-family: "Futura Md BT" !important;
+  font-family: "Futura Md BT", sans-serif !important;
   font-size: 14px;
   font-weight: 500 !important; }
 
@@ -179,7 +179,7 @@ header #site-navigation .menu > ul > li a {
       outline: 0;
       border: 1px solid #e54c37 !important;
       padding-left: 10px;
-      font-family: "Futura Md BT" !important; }
+      font-family: "Futura Md BT", sans-serif !important; }
     .gform_wrapper .gform_body ul li > label {
       display: none !important; }
   .gform_wrapper .gform_footer input[type="submit"] {
@@ -764,7 +764,7 @@ h1.vc_custom_heading {
     display: inline-block;
     margin: 0;
     text-transform: uppercase;
-    font-family: "Futura Md BT" !important;
+    font-family: "Futura Md BT", sans-serif !important;
     position: relative; }
   .wx-heading .primary-heading {
     font-size: 3em;
@@ -792,7 +792,7 @@ h1.vc_custom_heading {
     text-transform: capitalize;
     font-weight: 500;
     color: #fff !important;
-    font-family: "Futura Md BT" !important; }
+    font-family: "Futura Md BT", sans-serif !important; }
   .wx-heading .fourth-heading {
     color: #fff !important;
     font-size: 3.5em;
@@ -816,7 +816,7 @@ h1.vc_custom_heading {
   font-size: 1.3em;
   letter-spacing: inherit;
   text-transform: capitalize;
-  font-family: "Futura Md BT" !important;
+  font-family: "Futura Md BT", sans-serif !important;
   font-style: normal;
   line-height: 24px; }
 
@@ -931,7 +931,7 @@ h1.vc_custom_heading {
       -webkit-transition: all 1s ease;
       transition: all 1s ease;
       font-weight: 500;
-      font-family: "Futura Md BT" !important; }
+      font-family: "Futura Md BT", sans-serif !important; }
     .text-image-wrapper .text-image-holder .overlay {
       position: absolute;
       left: 0;
