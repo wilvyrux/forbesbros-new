@@ -123,7 +123,7 @@
         &:before {
             content: '';
             width: 156px;
-            background: #fff;
+            background: $color-white;
             height: 100%;
             position: absolute;
             transform: rotate(22deg);
@@ -172,13 +172,14 @@
     .interested-div h3,
     .interested-div p,
     .interested-div a {
-        color: #fff !important;
+        color: $color-white !important;
         position: relative;
         z-index: 2;
     }
     
     .interested-div a:hover {
-        color: #f44d0c !important;
+        // color: #f44d0c !important;
+        color: $color-darkorange;
     }
     
     .white-cover {
