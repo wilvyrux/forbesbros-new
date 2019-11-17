@@ -1,5 +1,8 @@
 .vc_btn3.vc_btn3-color-warning.vc_btn3-style-modern {
-    background: $color-orange
+    background: $color-orange;
+    &:hover {
+        background: $color-darkorange;
+    }
 }
 
 .services--grid {

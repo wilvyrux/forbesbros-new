@@ -27,6 +27,8 @@ a {
 
 .vc_btn3.vc_btn3-color-warning.vc_btn3-style-modern {
   background: #e54c37 !important; }
+  .vc_btn3.vc_btn3-color-warning.vc_btn3-style-modern:hover {
+    background: #b51600 !important; }
 
 .services--grid .vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-modern.vc_btn3-color-warning {
   margin-top: 30%; }
@@ -459,6 +461,22 @@ header.header {
     .project-single-details__image--holder img {
       width: 100%;
       height: auto; }
+
+.bullets ul li {
+  position: relative;
+  font-size: 1.2em;
+  margin-bottom: 5px; }
+  .bullets ul li:marker {
+    display: none; }
+  .bullets ul li:before {
+    position: absolute;
+    top: 8px;
+    left: -20px;
+    width: 7px;
+    height: 7px;
+    background: #e54c37 !important;
+    content: '';
+    display: block; }
 
 .services__icons img {
   opacity: .5;

@@ -440,6 +440,29 @@
         }
     }
     
+    .bullets {
+        ul {
+            li {
+                position: relative;
+                font-size: 1.2em;
+                margin-bottom: 5px;
+                &:marker {
+                    display: none;
+                }
+                &:before {
+                    position: absolute;
+                    top: 8px;
+                    left: -20px;
+                    width: 7px;
+                    height: 7px;
+                    background: $color-orange;
+                    content: '';
+                    display: block;
+                }
+            }
+        }
+    }
+    
     .services {
         &__icons {
             img {
