@@ -41,6 +41,9 @@ ul li,
 a {
   letter-spacing: inherit !important; }
 
+p {
+  font-family: "Futura Md BT", sans-serif !important; }
+
 h1,
 h2,
 h3,
@@ -691,12 +694,14 @@ h2.vc_custom_heading {
   text-transform: uppercase !important;
   font-weight: bold;
   font-size: 2.7em;
-  color: #262626 !important; }
+  color: #262626 !important;
+  font-family: "Futura Md BT", sans-serif !important; }
 
 h1.vc_custom_heading {
   position: relative;
   padding-bottom: 20px;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  font-family: "Futura Md BT", sans-serif !important; }
   h1.vc_custom_heading:after {
     display: block;
     position: absolute;

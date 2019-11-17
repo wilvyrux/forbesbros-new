@@ -21,6 +21,10 @@ a {
     letter-spacing: inherit !important;
 }
 
+p {
+    font-family: $font-primary;
+}
+
 // * {
 //     @include transition(.3s);
 // }

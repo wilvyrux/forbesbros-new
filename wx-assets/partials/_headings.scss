@@ -5,13 +5,15 @@ h2.vc_custom_heading {
     text-transform: uppercase !important;
     font-weight: bold;
     font-size: 2.7em;
-    color: $color-dark
+    color: $color-dark;
+    font-family: $font-primary;
 }
 
 h1.vc_custom_heading {
     position: relative;
     padding-bottom: 20px;
     margin-bottom: 15px;
+    font-family: $font-primary;
     &:after {
         display: block;
         position: absolute;
