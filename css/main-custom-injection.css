@@ -10,15 +10,15 @@ Skype: williamcarrascajr
  ***/
 @font-face {
   font-family: 'Futura Md BT';
-  src: url("/fonts/FuturaBT-Medium.eot");
-  src: url("/fonts/FuturaBT-Medium.eot?#iefix") format("embedded-opentype"), url("/fonts/FuturaBT-Medium.woff2") format("woff2"), url("/fonts/FuturaBT-Medium.woff") format("woff"), url("/fonts/FuturaBT-Medium.ttf") format("truetype"), url("/fonts/FuturaBT-Medium.svg#FuturaBT-Medium") format("svg");
+  src: url("../fonts/FuturaBT-Medium.eot");
+  src: url("../fonts/FuturaBT-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaBT-Medium.woff2") format("woff2"), url("../fonts/FuturaBT-Medium.woff") format("woff"), url("/fonts/FuturaBT-Medium.ttf") format("truetype"), url("../fonts/FuturaBT-Medium.svg#FuturaBT-Medium") format("svg");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'Futura Md BT';
-  src: url("/fonts/FuturaBT-Bold.eot");
-  src: url("/fonts/FuturaBT-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/FuturaBT-Bold.woff2") format("woff2"), url("/fonts/FuturaBT-Bold.woff") format("woff"), url("/fonts/FuturaBT-Bold.ttf") format("truetype"), url("/fonts/FuturaBT-Bold.svg#FuturaBT-Bold") format("svg");
+  src: url("../fonts/FuturaBT-Bold.eot");
+  src: url("../fonts/FuturaBT-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaBT-Bold.woff2") format("woff2"), url("../fonts/FuturaBT-Bold.woff") format("woff"), url("../fonts/FuturaBT-Bold.ttf") format("truetype"), url("../fonts/FuturaBT-Bold.svg#FuturaBT-Bold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
@@ -79,9 +79,13 @@ header #site-navigation .menu > ul > li:before, header #site-navigation .menu > 
 header #site-navigation .menu > ul > li a {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  font-family: "Futura Md BT", sans-serif !important; }
+  font-family: "Futura Md BT", sans-serif !important;
+  font-weight: bold; }
   header #site-navigation .menu > ul > li a:hover {
     color: #e54c37 !important; }
+
+header #site-navigation .menu > ul > li.current-menu-item a {
+  color: #e54c37 !important; }
 
 .copyright__list li {
   padding: 15px; }
@@ -142,6 +146,16 @@ header #site-navigation .menu > ul > li a {
       color: #fff !important;
       text-align: center;
       font-size: 1.2em; }
+
+.footer-column-container {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-wrap: wrap !important;
+  flex-wrap: wrap !important;
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important; }
 
 .gform_wrapper {
   max-width: 100% !important;
@@ -330,7 +344,9 @@ header #site-navigation .menu > ul > li a {
         display: inline-block;
         padding: 10px 25px;
         background: #e54c37 !important;
-        color: #fff !important; }
+        color: #fff !important;
+        border-radius: 5px;
+        -moz-border-radius: 5px; }
 
 .white-cap {
   overflow: hidden; }
@@ -362,7 +378,8 @@ header #site-navigation .menu > ul > li a {
     bottom: -2px;
     position: absolute;
     left: 0;
-    z-index: 1; }
+    z-index: 1;
+    opacity: .7; }
 
 .quote__top.wpb_column.vc_column_container.vc_col-sm-12 {
   position: absolute;
@@ -379,9 +396,21 @@ header #site-navigation .menu > ul > li a {
 .interested-div h3,
 .interested-div p,
 .interested-div a {
-  color: #fff !important !important;
+  color: #fff !important;
   position: relative;
   z-index: 2; }
+
+.interested-div h3,
+.interested-div p {
+  color: #fff !important;
+  position: relative;
+  z-index: 2; }
+
+.interested-div h3 {
+  color: #fff !important; }
+
+.interested-div a {
+  color: #e54c37 !important; }
 
 .interested-div a:hover {
   color: #b51600 !important; }
@@ -454,11 +483,24 @@ header #site-navigation .menu > ul > li a {
   .project-single-details__information {
     padding: 0 !important;
     margin: 0 !important;
-    margin-bottom: 25px !important; }
+    margin-bottom: 25px !important;
+    margin-left: 20px !important; }
     .project-single-details__information li {
       margin-bottom: 15px;
-      font-size: 1.3em;
-      color: #999; }
+      font-size: 1.2em;
+      color: #999;
+      line-height: 24px;
+      position: relative; }
+      .project-single-details__information li:before {
+        content: '';
+        width: 7px;
+        height: 7px;
+        display: inline-block;
+        background: #f00;
+        margin-right: 10px;
+        position: absolute;
+        left: -20px;
+        top: 8px; }
     .project-single-details__information strong {
       color: #000000 !important;
       margin-right: 9px; }
@@ -477,13 +519,13 @@ header #site-navigation .menu > ul > li a {
       left: -20px;
       width: 7px;
       height: 7px;
-      background: #e54c37 !important;
+      background: #999;
+      border-radius: 100%;
+      -moz-border-radius: 100%;
       content: '';
       display: block; }
   .project-single-details__category {
     margin: 50px 0px; }
-    .project-single-details__category img {
-      width: 45px; }
   .project-single-details__title {
     font-size: 2.2em;
     border-bottom: 1px solid #e54c37 !important;
@@ -577,8 +619,7 @@ header #site-navigation .menu > ul > li a {
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.2); }
+    height: 100%; }
   .project-display-thumbnail .img-holder:hover .fp-overlay {
     opacity: 1;
     visibility: visible; }
@@ -593,11 +634,14 @@ header #site-navigation .menu > ul > li a {
   flex-wrap: wrap !important;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
-  align-items: flex-start; }
-  .project-display-thumbnail .title-holder__image img {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px; }
+  align-items: flex-start;
+  -ms-flex-wrap: inherit !important;
+      flex-wrap: inherit !important; }
+  .project-display-thumbnail .title-holder__image {
+    margin-right: 15px; }
+    .project-display-thumbnail .title-holder__image img {
+      width: 50px;
+      height: 50px; }
   .project-display-thumbnail .title-holder h3 {
     font-size: 1.4em;
     margin: 0; }
@@ -681,6 +725,21 @@ header #site-navigation .menu > ul > li a {
   .contact-us-section__left ul li br {
     display: none; }
 
+.wpb_revslider_element.wpb_content_element {
+  margin: 0; }
+
+.rev_slider .tp-caption {
+  font-family: "Futura Md BT", sans-serif !important; }
+
+.rev_slider .slotholder:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.3); }
+
 .dwqa-breadcrumbs {
   background: #262626 !important; }
   .dwqa-breadcrumbs a {
@@ -711,6 +770,9 @@ h1.vc_custom_heading {
     width: 174px;
     height: 2px;
     margin: 10px 0; }
+
+h3.vc_custom_heading {
+  font-family: "Futura Md BT", sans-serif !important; }
 
 .wpb_accordion ul li {
   position: relative;

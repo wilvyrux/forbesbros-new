@@ -54,3 +54,8 @@
         }
     }
 }
+
+.footer-column-container {
+    @include flex;
+    @include flex-justify-content(center);
+}
