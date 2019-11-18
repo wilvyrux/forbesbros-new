@@ -67,7 +67,14 @@
                 color: $color-black;
             }
         }
-        &__items {
+        &__item {
+            padding: 0 !important;
+            &.col-md-3,
+            &.col-md-4 {
+                padding: 0 !important;
+            }
+        }
+        &__image {
             @include flex;
             @include flex-align-items(flex-end);
             @include flex-justify-content(center);
@@ -202,6 +209,9 @@
     .white-cover {
         position: relative;
         oveflow: hidden;
+        // height: 100% !important;
+        // background-size: cover;
+        // background-position: center;
         &:before {
             content: '';
             background: url('http://development.spiderowls.com/forbesbros/wp-content/uploads/2019/11/tail-white.png');
@@ -211,6 +221,7 @@
             left: 0;
             top: 0;
             background-size: 100% 100%;
+            z-index: 9;
         }
     }
     
@@ -221,16 +232,42 @@
     
     .services-single-content {
         @include flex;
+        min-height: 600px;
         &__item {
             width: calc(100%/2);
+            &--holder {
+                height: 100% !important;
+                background-size: cover;
+                background-position: center;
+                position: relative;
+                &:before {
+                    content: '';
+                    background: url('http://development.spiderowls.com/forbesbros/wp-content/uploads/2019/11/tail-white.png');
+                    position: absolute;
+                    width: 130px;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    background-size: 100% 100%;
+                    z-index: 9;
+                }
+            }
         }
         &__left {
             padding: 80px;
+            padding-bottom: 0;
+            @include flex;
+            @include flex-align-items(flex-end);
+            .wpb_text_column.wpb_content_element,
+            .wpb_wrapper {
+                margin-bottom: 0 !important;
+            }
             ul {
                 li {
                     position: relative;
                     font-size: 1.2em;
-                    margin-bottom: 5px;
+                    // margin-bottom: 5px;
+                    margin-bottom: 0 !important;
                     &:marker {
                         display: none;
                     }
@@ -245,6 +282,13 @@
                         display: block;
                     }
                 }
+            }
+        }
+        &__right {
+            .white-cover {
+                height: 100%;
+                background-size: cover !important;
+                background-position: center !important;
             }
         }
     }
@@ -380,6 +424,7 @@
     
     .project-single-details {
         padding: 2% 5%;
+        padding-bottom: 0;
         // h3 {
         //     font-size: 1.2em;
         //     font-weight: normal;
@@ -442,6 +487,7 @@
         }
         &__category {
             margin: 50px 0px;
+            margin-bottom: 0;
             img {
                 // width: 45px;
             }
@@ -464,6 +510,21 @@
                 overflow: auto;
                 height: auto;
                 overflow: hidden;
+                height: 100% !important;
+                background-size: cover;
+                background-position: center;
+                position: relative;
+                &:before {
+                    content: '';
+                    background: url('http://development.spiderowls.com/forbesbros/wp-content/uploads/2019/11/tail-white.png');
+                    position: absolute;
+                    width: 130px;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    background-size: 100% 100%;
+                    z-index: 9;
+                }
                 img {
                     width: 100%;
                     height: auto;
@@ -727,5 +788,11 @@
                 top: 0;
                 @include t-black(.3);
             }
+        }
+    }
+    
+    .margin-bottom-0 {
+        div {
+            margin-bottom: 0 !important;
         }
     }
