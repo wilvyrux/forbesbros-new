@@ -61,11 +61,24 @@
         margin-bottom: 0 !important;
         .title-holder {
             margin-bottom: 20px !important;
-            p {
-                font-size: 1.3em;
-                text-transform: uppercase;
-                color: $color-black;
+            @include flex;
+            @include flex-align-items(center);
+            .icons-services {
+                img {
+                    width: 50px;
+                    margin-right: 10px;
+                }
             }
+            p {
+                font-size: 1.4em;
+                text-transform: capitalize;
+                color: $color-black;
+                font-family: $font-primary;
+                font-weight: bold;
+            }
+        }
+        &__title {
+            padding-top: 5px;
         }
         &__item {
             padding: 0 !important;
@@ -78,7 +91,7 @@
             @include flex;
             @include flex-align-items(flex-end);
             @include flex-justify-content(center);
-            height: 200px;
+            height: 250px;
             background-size: cover;
             background-position: center;
             position: relative;
@@ -160,7 +173,7 @@
             position: absolute;
             left: 0;
             z-index: 1;
-            opacity: .7;
+            // opacity: .7; 
         }
     }
     
@@ -222,6 +235,23 @@
             top: 0;
             background-size: 100% 100%;
             z-index: 9;
+        }
+    }
+    
+    .white-text {
+        p,
+        div,
+        h2,
+        h3,
+        h4,
+        h5,
+        h2.vc_custom_heading,
+        h3.vc_custom_heading,
+        h4.vc_custom_heading,
+        h5.vc_custom_heading,
+        strong,
+        span {
+            color: $color-white;
         }
     }
     
@@ -422,6 +452,15 @@
         padding: 0;
     }
     
+    .orange-bar {
+        p {
+            color: $color-black;
+        }
+        div {
+            margin-bottom: 0 !important;
+        }
+    }
+    
     .project-single-details {
         padding: 2% 5%;
         padding-bottom: 0;
@@ -551,6 +590,25 @@
                     background: $color-orange;
                     content: '';
                     display: block;
+                }
+            }
+        }
+    }
+    
+    .bullet-circle {
+        ul {
+            li {
+                font-size: .9em;
+                &:before {
+                    position: absolute;
+                    top: 8px;
+                    left: -20px;
+                    width: 7px;
+                    height: 7px;
+                    background: $color-orange;
+                    content: '';
+                    display: block;
+                    @include border-radius(100%);
                 }
             }
         }
@@ -687,6 +745,7 @@
             h3 {
                 font-size: 1.4em;
                 margin: 0;
+                font-family: $font-primary;
             }
         }
         .fp-overlay {
@@ -705,6 +764,7 @@
                 padding: 10px 25px;
                 background: $color-orange;
                 color: $color-white;
+                @include border-radius(5px);
             }
         }
     }
@@ -795,4 +855,8 @@
         div {
             margin-bottom: 0 !important;
         }
+    }
+    
+    div#careerModal {
+        display: none !important;
     }
