@@ -70,7 +70,7 @@
                 }
             }
             p {
-                font-size: 1.4em;
+                font-size: 1.2em;
                 text-transform: capitalize;
                 color: $color-black;
                 font-family: $font-primary;
@@ -227,7 +227,7 @@
         // background-position: center;
         &:before {
             content: '';
-            background: url('http://development.spiderowls.com/forbesbros/wp-content/uploads/2019/11/tail-white.png');
+            background: url('../custom-php/tail-white.png');
             position: absolute;
             width: 130px;
             height: 100%;
@@ -272,7 +272,7 @@
                 position: relative;
                 &:before {
                     content: '';
-                    background: url('http://development.spiderowls.com/forbesbros/wp-content/uploads/2019/11/tail-white.png');
+                    background: url('../custom-php/tail-white.png');
                     position: absolute;
                     width: 130px;
                     height: 100%;
@@ -295,7 +295,7 @@
             ul {
                 li {
                     position: relative;
-                    font-size: 1.2em;
+                    font-size: 1em;
                     // margin-bottom: 5px;
                     margin-bottom: 0 !important;
                     &:marker {
@@ -476,7 +476,7 @@
             margin-left: 20px !important;
             li {
                 margin-bottom: 15px;
-                font-size: 1.2em;
+                font-size: 1em;
                 color: #999;
                 line-height: 24px;
                 position: relative;
@@ -500,12 +500,12 @@
         &__description {
             p {
                 color: #999;
-                font-size: 1.2em;
+                font-size: 1em;
             }
             ul {
                 li {
                     position: relative;
-                    font-size: 1.2em;
+                    font-size: 1em;
                     margin-bottom: 5px;
                     &:marker {
                         display: none;
@@ -555,7 +555,7 @@
                 position: relative;
                 &:before {
                     content: '';
-                    background: url('http://development.spiderowls.com/forbesbros/wp-content/uploads/2019/11/tail-white.png');
+                    background: url('../custom-php/tail-white.png');
                     position: absolute;
                     width: 130px;
                     height: 100%;
@@ -576,7 +576,7 @@
         ul {
             li {
                 position: relative;
-                font-size: 1.2em;
+                font-size: 1.1em !important;
                 margin-bottom: 5px;
                 &:marker {
                     display: none;
@@ -743,7 +743,7 @@
             }
             &__description {}
             h3 {
-                font-size: 1.4em;
+                font-size: 1.2em;
                 margin: 0;
                 font-family: $font-primary;
             }
@@ -815,7 +815,7 @@
         &__left {
             ul {
                 li {
-                    font-size: 1.5em;
+                    font-size: 1.2em;
                     margin-bottom: 15px;
                     @include flex;
                     strong {
@@ -859,4 +859,10 @@
     
     div#careerModal {
         display: none !important;
+    }
+    
+    .we-build {
+        .vc_column-inner {
+            padding-top: 0 !important;
+        }
     }

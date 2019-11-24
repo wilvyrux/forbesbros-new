@@ -48,7 +48,8 @@ h2,
 h3,
 h4,
 h5 {
-  font-weight: bold; }
+  font-weight: bold;
+  font-family: "Futura Md BT", sans-serif !important; }
 
 .vc_btn3.vc_btn3-color-warning.vc_btn3-style-modern {
   background: #e54c37 !important;
@@ -312,7 +313,7 @@ header #site-navigation .menu > ul > li.current-menu-item a {
       width: 50px;
       margin-right: 10px; }
     .services-display .title-holder p {
-      font-size: 1.4em;
+      font-size: 1.2em;
       text-transform: capitalize;
       color: #000000 !important;
       font-family: "Futura Md BT", sans-serif !important;
@@ -443,7 +444,7 @@ header #site-navigation .menu > ul > li.current-menu-item a {
   oveflow: hidden; }
   .white-cover:before {
     content: '';
-    background: url("http://development.spiderowls.com/forbesbros/wp-content/uploads/2019/11/tail-white.png");
+    background: url("../custom-php/tail-white.png");
     position: absolute;
     width: 130px;
     height: 100%;
@@ -486,7 +487,7 @@ header #site-navigation .menu > ul > li.current-menu-item a {
       position: relative; }
       .services-single-content__item--holder:before {
         content: '';
-        background: url("http://development.spiderowls.com/forbesbros/wp-content/uploads/2019/11/tail-white.png");
+        background: url("../custom-php/tail-white.png");
         position: absolute;
         width: 130px;
         height: 100%;
@@ -510,7 +511,7 @@ header #site-navigation .menu > ul > li.current-menu-item a {
       margin-bottom: 0 !important; }
     .services-single-content__left ul li {
       position: relative;
-      font-size: 1.2em;
+      font-size: 1em;
       margin-bottom: 0 !important; }
       .services-single-content__left ul li:marker {
         display: none; }
@@ -564,7 +565,7 @@ header #site-navigation .menu > ul > li.current-menu-item a {
     margin-left: 20px !important; }
     .project-single-details__information li {
       margin-bottom: 15px;
-      font-size: 1.2em;
+      font-size: 1em;
       color: #999;
       line-height: 24px;
       position: relative; }
@@ -583,10 +584,10 @@ header #site-navigation .menu > ul > li.current-menu-item a {
       margin-right: 9px; }
   .project-single-details__description p {
     color: #999;
-    font-size: 1.2em; }
+    font-size: 1em; }
   .project-single-details__description ul li {
     position: relative;
-    font-size: 1.2em;
+    font-size: 1em;
     margin-bottom: 5px; }
     .project-single-details__description ul li:marker {
       display: none; }
@@ -620,7 +621,7 @@ header #site-navigation .menu > ul > li.current-menu-item a {
     position: relative; }
     .project-single-details__image--holder:before {
       content: '';
-      background: url("http://development.spiderowls.com/forbesbros/wp-content/uploads/2019/11/tail-white.png");
+      background: url("../custom-php/tail-white.png");
       position: absolute;
       width: 130px;
       height: 100%;
@@ -634,7 +635,7 @@ header #site-navigation .menu > ul > li.current-menu-item a {
 
 .bullets ul li {
   position: relative;
-  font-size: 1.2em;
+  font-size: 1.1em !important;
   margin-bottom: 5px; }
   .bullets ul li:marker {
     display: none; }
@@ -749,7 +750,7 @@ header #site-navigation .menu > ul > li.current-menu-item a {
       width: 50px;
       height: 50px; }
   .project-display-thumbnail .title-holder h3 {
-    font-size: 1.4em;
+    font-size: 1.2em;
     margin: 0;
     font-family: "Futura Md BT", sans-serif !important; }
 
@@ -821,7 +822,7 @@ header #site-navigation .menu > ul > li.current-menu-item a {
       font-size: .8em; }
 
 .contact-us-section__left ul li {
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin-bottom: 15px;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -854,6 +855,9 @@ header #site-navigation .menu > ul > li.current-menu-item a {
 
 div#careerModal {
   display: none !important; }
+
+.we-build .vc_column-inner {
+  padding-top: 0 !important; }
 
 .dwqa-breadcrumbs {
   background: #262626 !important; }
