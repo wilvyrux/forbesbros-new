@@ -424,6 +424,23 @@ header #site-navigation .menu > ul > li.current-menu-item a {
   position: relative;
   z-index: 2; }
 
+.interested-div__black h3,
+.interested-div__black strong,
+.interested-div__black p {
+  color: #000000 !important !important;
+  position: relative;
+  z-index: 2;
+  font-size: 1.2em !important; }
+
+.interested-div__black p strong {
+  color: #000000 !important !important; }
+
+.interested-div__black h3 {
+  color: #000000 !important !important; }
+
+.interested-div__black a {
+  color: #e54c37 !important; }
+
 .interested-div h3,
 .interested-div p {
   color: #fff !important;
@@ -466,6 +483,10 @@ header #site-navigation .menu > ul > li.current-menu-item a {
 .white-text strong,
 .white-text span {
   color: #fff !important; }
+
+.float-left {
+  float: left;
+  margin-right: 25px; }
 
 .container.services-single-container {
   max-width: 100%;
@@ -648,6 +669,9 @@ header #site-navigation .menu > ul > li.current-menu-item a {
     background: #e54c37 !important;
     content: '';
     display: block; }
+
+.no-bullets ul {
+  margin: 0; }
 
 .bullet-circle ul li {
   font-size: .9em; }
@@ -875,6 +899,8 @@ h2.vc_custom_heading {
   font-size: 2.4em;
   color: #262626 !important;
   font-family: "Futura Md BT", sans-serif !important; }
+  h2.vc_custom_heading:after {
+    margin-bottom: 0 !important; }
 
 h1.vc_custom_heading {
   position: relative;

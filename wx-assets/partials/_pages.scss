@@ -200,6 +200,27 @@
     }
     
     .interested-div {
+        &__black {
+            h3,
+            strong,
+            p {
+                color: $color-black !important;
+                position: relative;
+                z-index: 2;
+                font-size: 1.2em !important;
+            }
+            p {
+                strong {
+                    color: $color-black !important;
+                }
+            }
+            h3 {
+                color: $color-black !important;
+            }
+            a {
+                color: $color-orange;
+            }
+        }
         h3,
         p {
             color: $color-white;
@@ -253,6 +274,11 @@
         span {
             color: $color-white;
         }
+    }
+    
+    .float-left {
+        float: left;
+        margin-right: 25px;
     }
     
     .container.services-single-container {
@@ -592,6 +618,12 @@
                     display: block;
                 }
             }
+        }
+    }
+    
+    .no-bullets {
+        ul {
+            margin: 0;
         }
     }
     
